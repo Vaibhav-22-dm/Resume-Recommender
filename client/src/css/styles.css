@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+    border-radius: 25px;
+    margin: 2px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(217, 217, 217, 0.4);
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #CDCDCD;
+    border-radius: 8px;
+    background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #5a5a5a;
+}
+
+.dropzone-box {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #5E5ADB;
+    padding: 24px;
+    text-align: center;
+}
+
+.files-list-box {
+    width: 100%;
+}
+
+.files-list-item {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    padding: 16px;
+    border: 1px solid #EAECF0;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.file-icon {
+    width: 10%;
+}
+
+.file-data {
+    width: 90%;
+    text-align: left;
+    padding: 0 15px;
+}
+
+.file-checkbox {
+    width: 10%;
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 640px;
+}
+
+.files-btn-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.description-form,
+.details-modal {
+    width: 100%;
+    max-width: 640px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 0 8px -6 rgba(16, 24, 40, 0.03);
+    text-align: left;
+    padding: 15px;
+}
+
+.flag-icon-box {
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(234, 236, 240, 1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.description-form-header,
+.details-modal-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.backdrop {
+    background: rgb(0 0 0 / 0%);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-recommendations-table {
+    padding: 20px 0;
+    border-top: 1px solid #EAECF0;
+    border-bottom: 1px solid #EAECF0;
+}
+
+.non-resume-recommendations-table {
+    padding: 20px 0;
+}
+
+.details-tabs-box {
+    border: 1px solid #EAECF0;
+    background: #F9FAFB;
+    border-radius: 10px;
+    padding: 3px;
+    width: fit-content;
+}
+
+.details-tabs-box button {
+    border: 0;
+    background: transparent;
+    color: #667085;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.details-tabs-box button.active {
+    border-radius: 6px;
+    background: #FFFFFF;
+    color: #344054;
+    box-shadow: 0 1px 2px #1018283b;
+}
