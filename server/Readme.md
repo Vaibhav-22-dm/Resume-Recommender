@@ -29,6 +29,24 @@ This is a django and django-rest-framework project. It provides APIs for extract
   cd Resume-Recommender/server
   ```
 
+- Install virtualenv package
+
+  ```
+  pip install virtualenv
+  ```
+
+- Create a virtual environment
+
+  ```
+  virtualenv env
+  ```
+
+- Activate the virtual environment
+  
+  ```
+  ./env/Scripts/activate
+  ```
+
 - Install requirements
 
   ```

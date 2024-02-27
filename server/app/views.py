@@ -13,6 +13,7 @@ from middleware.auth import Authentication
 from rest_framework.parsers import MultiPartParser, FormParser
 from rest_framework.response import Response
 
+MAX_RETRIES = 5
 
 @api_view(['POST'])
 def create_session(request):
@@ -64,14 +65,19 @@ def generate_recommendations(request):
                 else:
                     details = json.loads(resume_file.details)
 
-                for i in range(5):
+                for i in range(MAX_RETRIES):
                     score_details = score_resume_details(session.role, session.description, details)
-                    if score_details is not None: break
+                    if score_details is None: 
+                        details = extract_details(resume_file.file.path)
+                        resume_file.details = json.dumps(details)
+                    else:
+                        break
 
                 if (score_details is None): 
                     resume_file.relevance_score =  0 
                 else: 
                     resume_file.relevance_score = json.loads(score_details)['overall_relevance_score']
+                    details = score_details
 
                 resume_file.details = details
                 resume_file.save()

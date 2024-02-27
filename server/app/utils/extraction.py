@@ -1,4 +1,4 @@
-import fitz  # PyMuPDF
+import fitz
 import openai
 import os
 import pytesseract
@@ -29,10 +29,10 @@ def ocr_pdf(doc):
 
 def query_gpt(prompt):
     response = openai.completions.create(
-        model="gpt-3.5-turbo-instruct", # GPT-4 modeli
+        model="gpt-3.5-turbo-instruct", 
         prompt=prompt,
         temperature=0.5,
-        max_tokens=2048,  # Adjusted for potentially longer inputs
+        max_tokens=2048,  
         top_p=1.0,
         frequency_penalty=0.0,
         presence_penalty=0.0
@@ -40,7 +40,7 @@ def query_gpt(prompt):
     return response.choices[0].text.strip()
 
 def extract_from_gpt(text):
-    prompt = """Transform the provided resume text into a JSON object strictly adhering to the format below. Use 'month,yyyy' for dates (e.g., May,2024) and express durations in months, keep descriptions concise, max 1-2 lines. Use 'N/A' for missing info. Only include the JSON output in your response.
+    prompt = """Transform the provided resume text into a JSON object strictly adhering to the format below. Use 'MM-YYYY' for dates (e.g., 02-2024) and express durations in months, keep descriptions concise, max 1-2 lines. Use 'N/A' for missing info. Only include the JSON output in your response.
 
     {
         "name": "Name",
@@ -51,8 +51,8 @@ def extract_from_gpt(text):
                 "short_description": "Description",
                 "tech_stack": ["Technology"],
                 "time_duration": {
-                    "start": "month,yyyy",
-                    "end": "month,yyyy",
+                    "start": "MM-YYYY",
+                    "end": "MM-YYYY",
                     "duration_months": Duration
                 }
             }
@@ -64,8 +64,8 @@ def extract_from_gpt(text):
                 "short_description": "Description",
                 "tech_stack": ["Technology"],
                 "time_duration": {
-                    "start": "month,yyyy",
-                    "end": "month,yyyy",
+                    "start": "MM-YYYY",
+                    "end": "MM-YYYY",
                     "duration_months": Duration
                 }
             }
@@ -75,8 +75,8 @@ def extract_from_gpt(text):
             "branch": "Branch",
             "degree": "Degree",
             "cgpa": CGPA,
-            "start": "month,yyyy",
-            "end": "month,yyyy"
+            "start": "MM-YYYY,
+            "end": "MM-YYYY"
         }
     }
 

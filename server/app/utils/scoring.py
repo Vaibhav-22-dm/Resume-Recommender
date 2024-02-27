@@ -9,10 +9,10 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 
 def query_gpt_for_scoring(prompt):
     response = openai.completions.create(
-        model="gpt-3.5-turbo-instruct",  # GPT-4 modeli
+        model="gpt-3.5-turbo-instruct", 
         prompt=prompt,
         temperature=0.3,
-        max_tokens=500,  # Adjust based on the length of your prompt
+        max_tokens=500,  
         top_p=1.0,
         frequency_penalty=0.5,
         presence_penalty=0.0
@@ -73,5 +73,5 @@ def score_resume_details(job_role, job_description, resume_details_json):
         return updated_resume_details_json
     except Exception as e:
         print(e.with_traceback)
-        pass
+        return None
 

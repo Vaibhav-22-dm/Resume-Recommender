@@ -13,7 +13,7 @@ export default function ProfessionalExperienceDetails({ experience }) {
             <Card variant="outlined">
                 <CardContent>
                     <Typography sx={{ fontSize: "12px" }} color="text.secondary" gutterBottom>
-                        {experience.time_duration.start} to {experience.time_duration.end}, {experience.time_duration.duration_months} months
+                        {experience.time_duration.start} to {experience.time_duration.end}, {experience.time_duration.duration_months} months | Relevancy: {experience.relevancy}/10
                     </Typography>
                     <Typography variant="h6" component="div">
                         {experience.role}, {experience.organization}
