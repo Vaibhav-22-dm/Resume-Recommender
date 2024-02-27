@@ -62,7 +62,6 @@ const UploadForm = () => {
         if (acceptedFiles?.length > 0) {
             acceptedFiles.map((file, index) => {
                 const fileKey = `${Object.keys(files).length + index}`;
-                console.log("file: ", file)
                 setFiles((prevFiles) => ({
                     ...prevFiles, [fileKey]: {file: file, checked: false}
                 })
