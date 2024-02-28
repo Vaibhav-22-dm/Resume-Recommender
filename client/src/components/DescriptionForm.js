@@ -38,7 +38,6 @@ const DescriptionForm = ({ open, handleClose }) => {
         await axios
             .post(baseURL + "generate-recommendations/", { role, description }, config)
             .then(res => {
-                console.log("res generated: ", res)
                 setLoading(false)
                 navigate("/dashboard")
             })

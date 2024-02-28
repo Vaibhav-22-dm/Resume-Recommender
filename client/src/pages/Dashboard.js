@@ -9,6 +9,7 @@ const Dashboard = () => {
     const [open, setOpen] = useState(false)
     const [profile, setProfile] = React.useState({})
     const [data, setData] = useState(null)
+    const [error, setError] = useState(null)
 
     const handleOpen = (profile) => {
         setProfile(profile)
@@ -31,19 +32,20 @@ const Dashboard = () => {
             .then(res => {
                 setData(res.data)
             })
+            .catch(err => {
+                setError(err.response.data.error)
+            })
     }
 
     useEffect(() => {
         getData("", "")
     }, [])
 
-
-
     return (
         <>
-            {data===null || data.message ?
-                <Container sx={{textAlign: "center", marginTop: "70px"}}>
-                    <Typography variant="h3">Not yet generated</Typography>
+            {data === null || error ?
+                <Container sx={{ textAlign: "center", marginTop: "70px" }}>
+                    <Typography variant="h3">{error ? error : "Some error occured. Restart Session"}</Typography>
                 </Container>
                 :
                 <>

@@ -99,7 +99,7 @@ def get_recommendations(request):
         session_id = getattr(request, 'session_id', None)
         session = Session.objects.get(id=session_id)
         if session.status==False:
-            return Response({"message":"Recommendations not yet generated"}, status=200)
+            return Response({"error":"Recommendations not yet generated"}, status=400)
         data = {}
         resume_files_recommended = Resume.objects.filter(session=session).filter(relevance_score__gte=80)
         serializer = ResumeSerializer(resume_files_recommended, many=True)

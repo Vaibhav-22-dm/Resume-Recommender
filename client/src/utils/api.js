@@ -17,14 +17,12 @@ export const attachFiles = async (files) => {
             Authorization: "Bearer " + localStorage.getItem("access_token")
         }
     }
-    const data = {
-        files: files
-    }
-    console.log(config, data)
+
     const res = await axios
         .post(baseURL + "attach-files/", { files }, config)
         .then(res => {
             return res
         })
+        
     return res;
 }

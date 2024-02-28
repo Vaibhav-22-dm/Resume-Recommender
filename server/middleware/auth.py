@@ -1,11 +1,14 @@
 import jwt
 from django.conf import settings
 from app.models.sessions import Session
-from rest_framework_simplejwt.exceptions import InvalidToken, AuthenticationFailed
 from rest_framework import exceptions
 from django.conf import settings
 from django.contrib.auth.models import AnonymousUser
 from rest_framework import authentication
+
+
+
+
 
 class Authentication(authentication.BaseAuthentication):
     def authenticate(self, request):
@@ -19,7 +22,7 @@ class Authentication(authentication.BaseAuthentication):
             session_id = payload.get('session_id')
             session = Session.objects.get(id=int(session_id))
         except Session.DoesNotExist:
-            raise AuthenticationFailed('Session does not exist')
+            raise exceptions.AuthenticationFailed('Session does not exist')
         except Exception as e:
             raise exceptions.AuthenticationFailed(f'Invalid token: {str(e)}')
         

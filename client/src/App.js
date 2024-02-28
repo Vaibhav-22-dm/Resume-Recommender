@@ -1,7 +1,6 @@
 import { ThemeProvider } from '@mui/material';
 import './App.css';
 import { createTheme } from '@mui/material';
-import { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from './pages/Home';
 import Dashboard from './pages/Dashboard';

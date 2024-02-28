@@ -57,6 +57,7 @@ def process_gpt_scoring_response(resume_details, scoring_text):
         resume_details['overall_relevance_score'] = relevance_score
     except Exception as e:
         print(f"Error parsing GPT-4 response: {e}")
+        return None
     
     return resume_details
 

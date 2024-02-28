@@ -60,14 +60,10 @@ CORS_ALLOWED_ORIGINS = [
 
 ROOT_URLCONF = 'config.urls'
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': [
-#         'app.utils.auth.CustomJWTAuthentication',
-#     ],
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.IsAuthenticated',
-#     ],
-# }
+REST_FRAMEWORK = {
+    'EXCEPTION_HANDLER': 'middleware.exceptions.custom_exception_handler',
+}
+
 
 TEMPLATES = [
     {

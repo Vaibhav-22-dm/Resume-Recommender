@@ -28,12 +28,10 @@ const UploadForm = () => {
 
     const handleClose = () => {
         setOpen(false)
-        // setSelectedFiles([])
     }
 
     const handleCancel = () => {
         setFiles([])
-        // setSelectedFiles([])
     }
 
     const handleCheck = (fileKey, value) => {
@@ -45,10 +43,9 @@ const UploadForm = () => {
     }
 
     const handleAttach = () => {
-        console.log(files)
         let selectedFiles = []
         Object.keys(files).map((fileKey) => {
-            console.log(fileKey, typeof files[fileKey].checked, true, files[fileKey].checked===true)
+
             if (files[fileKey].checked===true) {
                 selectedFiles.push(files[fileKey].file)
             }

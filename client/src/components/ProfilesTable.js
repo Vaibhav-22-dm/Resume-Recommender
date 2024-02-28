@@ -33,268 +33,268 @@ const columns = [
     },
 ];
 
-const rows = [
-    { 
-        "name": 'Prabhat Singh', 
-        "email": "prabhat@gmail.com" , 
-        "relevance_score": 100, 
-        "resume_link": "https://google.com", 
-        "projects": [
-            {
-                "project_title": "Image classification with pytorch",
-                "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
-                "tech_stack": ["python", "pytorch"],
-                "time_duration": {
-                    "start": "04-2020",
-                    "end": "05-2020",
-                    "duration_months": 2,
-                },
-                "relevancy": 5
-            },
-            {
-                "project_title": "Stock price prediction with LSTM",
-                "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
-                "tech_stack": ["python", "pytorch", "SQL"],
-                "time_duration": {
-                    "start": "10-2021",
-                    "end": "12-2021",
-                    "duration_months": 3,
-                },
-                "relevancy": 3
-            }
-        ],
-        "professional_experience": [
-            {
-                "role": "Data Scientist",
-                "organization": "Swiggy",
-                "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
-                "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
-                "time_duration": {
-                    "start": "05-2022",
-                    "end": "07-2022",
-                    "duration_months": 3
-                },
-                "relevancy": 4
-            }
-        ],
-        "college": {
-            "name": "IIT Bombay",
-            "branch": "Electrical Engineering",
-            "degree": "Dual Degree",
-            "cgpa": 8.2,
-            "start": "07-2018",
-            "end": "05-2023"
-        }    
-    },
-    {
-        "name": 'Prabhat Singh',
-        "email": "prabhat@gmail.com",
-        "relevance_score": 100,
-        "resume_link": "https://google.com",
-        "projects": [
-            {
-                "project_title": "Image classification with pytorch",
-                "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
-                "tech_stack": ["python", "pytorch"],
-                "time_duration": {
-                    "start": "04-2020",
-                    "end": "05-2020",
-                    "duration_months": 2,
-                },
-                "relevancy": 5
-            },
-            {
-                "project_title": "Stock price prediction with LSTM",
-                "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
-                "tech_stack": ["python", "pytorch", "SQL"],
-                "time_duration": {
-                    "start": "10-2021",
-                    "end": "12-2021",
-                    "duration_months": 3,
-                },
-                "relevancy": 3
-            }
-        ],
-        "professional_experience": [
-            {
-                "role": "Data Scientist",
-                "organization": "Swiggy",
-                "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
-                "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
-                "time_duration": {
-                    "start": "05-2022",
-                    "end": "07-2022",
-                    "duration_months": 3
-                },
-                "relevancy": 4
-            }
-        ],
-        "college": {
-            "name": "IIT Bombay",
-            "branch": "Electrical Engineering",
-            "degree": "Dual Degree",
-            "cgpa": 8.2,
-            "start": "07-2018",
-            "end": "05-2023"
-        }
-    },
-    {
-        "name": 'Prabhat Singh',
-        "email": "prabhat@gmail.com",
-        "relevance_score": 100,
-        "resume_link": "https://google.com",
-        "projects": [
-            {
-                "project_title": "Image classification with pytorch",
-                "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
-                "tech_stack": ["python", "pytorch"],
-                "time_duration": {
-                    "start": "04-2020",
-                    "end": "05-2020",
-                    "duration_months": 2,
-                },
-                "relevancy": 5
-            },
-            {
-                "project_title": "Stock price prediction with LSTM",
-                "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
-                "tech_stack": ["python", "pytorch", "SQL"],
-                "time_duration": {
-                    "start": "10-2021",
-                    "end": "12-2021",
-                    "duration_months": 3,
-                },
-                "relevancy": 3
-            }
-        ],
-        "professional_experience": [
-            {
-                "role": "Data Scientist",
-                "organization": "Swiggy",
-                "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
-                "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
-                "time_duration": {
-                    "start": "05-2022",
-                    "end": "07-2022",
-                    "duration_months": 3
-                },
-                "relevancy": 4
-            }
-        ],
-        "college": {
-            "name": "IIT Bombay",
-            "branch": "Electrical Engineering",
-            "degree": "Dual Degree",
-            "cgpa": 8.2,
-            "start": "07-2018",
-            "end": "05-2023"
-        }
-    },
-    {
-        "name": 'Prabhat Singh',
-        "email": "prabhat@gmail.com",
-        "relevance_score": 100,
-        "resume_link": "https://google.com",
-        "projects": [
-            {
-                "project_title": "Image classification with pytorch",
-                "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
-                "tech_stack": ["python", "pytorch"],
-                "time_duration": {
-                    "start": "04-2020",
-                    "end": "05-2020",
-                    "duration_months": 2,
-                },
-                "relevancy": 5
-            },
-            {
-                "project_title": "Stock price prediction with LSTM",
-                "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
-                "tech_stack": ["python", "pytorch", "SQL"],
-                "time_duration": {
-                    "start": "10-2021",
-                    "end": "12-2021",
-                    "duration_months": 3,
-                },
-                "relevancy": 3
-            }
-        ],
-        "professional_experience": [
-            {
-                "role": "Data Scientist",
-                "organization": "Swiggy",
-                "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
-                "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
-                "time_duration": {
-                    "start": "05-2022",
-                    "end": "07-2022",
-                    "duration_months": 3
-                },
-                "relevancy": 4
-            }
-        ],
-        "college": {
-            "name": "IIT Bombay",
-            "branch": "Electrical Engineering",
-            "degree": "Dual Degree",
-            "cgpa": 8.2,
-            "start": "07-2018",
-            "end": "05-2023"
-        }
-    },
-    {
-        "name": 'Prabhat Singh',
-        "email": "prabhat@gmail.com",
-        "relevance_score": 100,
-        "resume_link": "https://google.com",
-        "projects": [
-            {
-                "project_title": "Image classification with pytorch",
-                "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
-                "tech_stack": ["python", "pytorch"],
-                "time_duration": {
-                    "start": "04-2020",
-                    "end": "05-2020",
-                    "duration_months": 2,
-                },
-                "relevancy": 5
-            },
-            {
-                "project_title": "Stock price prediction with LSTM",
-                "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
-                "tech_stack": ["python", "pytorch", "SQL"],
-                "time_duration": {
-                    "start": "10-2021",
-                    "end": "12-2021",
-                    "duration_months": 3,
-                },
-                "relevancy": 3
-            }
-        ],
-        "professional_experience": [
-            {
-                "role": "Data Scientist",
-                "organization": "Swiggy",
-                "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
-                "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
-                "time_duration": {
-                    "start": "05-2022",
-                    "end": "07-2022",
-                    "duration_months": 3
-                },
-                "relevancy": 4
-            }
-        ],
-        "college": {
-            "name": "IIT Bombay",
-            "branch": "Electrical Engineering",
-            "degree": "Dual Degree",
-            "cgpa": 8.2,
-            "start": "07-2018",
-            "end": "05-2023"
-        }
-    }
-];
+// const rows = [
+//     { 
+//         "name": 'Prabhat Singh', 
+//         "email": "prabhat@gmail.com" , 
+//         "relevance_score": 100, 
+//         "resume_link": "https://google.com", 
+//         "projects": [
+//             {
+//                 "project_title": "Image classification with pytorch",
+//                 "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
+//                 "tech_stack": ["python", "pytorch"],
+//                 "time_duration": {
+//                     "start": "04-2020",
+//                     "end": "05-2020",
+//                     "duration_months": 2,
+//                 },
+//                 "relevancy": 5
+//             },
+//             {
+//                 "project_title": "Stock price prediction with LSTM",
+//                 "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
+//                 "tech_stack": ["python", "pytorch", "SQL"],
+//                 "time_duration": {
+//                     "start": "10-2021",
+//                     "end": "12-2021",
+//                     "duration_months": 3,
+//                 },
+//                 "relevancy": 3
+//             }
+//         ],
+//         "professional_experience": [
+//             {
+//                 "role": "Data Scientist",
+//                 "organization": "Swiggy",
+//                 "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
+//                 "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
+//                 "time_duration": {
+//                     "start": "05-2022",
+//                     "end": "07-2022",
+//                     "duration_months": 3
+//                 },
+//                 "relevancy": 4
+//             }
+//         ],
+//         "college": {
+//             "name": "IIT Bombay",
+//             "branch": "Electrical Engineering",
+//             "degree": "Dual Degree",
+//             "cgpa": 8.2,
+//             "start": "07-2018",
+//             "end": "05-2023"
+//         }    
+//     },
+//     {
+//         "name": 'Prabhat Singh',
+//         "email": "prabhat@gmail.com",
+//         "relevance_score": 100,
+//         "resume_link": "https://google.com",
+//         "projects": [
+//             {
+//                 "project_title": "Image classification with pytorch",
+//                 "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
+//                 "tech_stack": ["python", "pytorch"],
+//                 "time_duration": {
+//                     "start": "04-2020",
+//                     "end": "05-2020",
+//                     "duration_months": 2,
+//                 },
+//                 "relevancy": 5
+//             },
+//             {
+//                 "project_title": "Stock price prediction with LSTM",
+//                 "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
+//                 "tech_stack": ["python", "pytorch", "SQL"],
+//                 "time_duration": {
+//                     "start": "10-2021",
+//                     "end": "12-2021",
+//                     "duration_months": 3,
+//                 },
+//                 "relevancy": 3
+//             }
+//         ],
+//         "professional_experience": [
+//             {
+//                 "role": "Data Scientist",
+//                 "organization": "Swiggy",
+//                 "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
+//                 "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
+//                 "time_duration": {
+//                     "start": "05-2022",
+//                     "end": "07-2022",
+//                     "duration_months": 3
+//                 },
+//                 "relevancy": 4
+//             }
+//         ],
+//         "college": {
+//             "name": "IIT Bombay",
+//             "branch": "Electrical Engineering",
+//             "degree": "Dual Degree",
+//             "cgpa": 8.2,
+//             "start": "07-2018",
+//             "end": "05-2023"
+//         }
+//     },
+//     {
+//         "name": 'Prabhat Singh',
+//         "email": "prabhat@gmail.com",
+//         "relevance_score": 100,
+//         "resume_link": "https://google.com",
+//         "projects": [
+//             {
+//                 "project_title": "Image classification with pytorch",
+//                 "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
+//                 "tech_stack": ["python", "pytorch"],
+//                 "time_duration": {
+//                     "start": "04-2020",
+//                     "end": "05-2020",
+//                     "duration_months": 2,
+//                 },
+//                 "relevancy": 5
+//             },
+//             {
+//                 "project_title": "Stock price prediction with LSTM",
+//                 "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
+//                 "tech_stack": ["python", "pytorch", "SQL"],
+//                 "time_duration": {
+//                     "start": "10-2021",
+//                     "end": "12-2021",
+//                     "duration_months": 3,
+//                 },
+//                 "relevancy": 3
+//             }
+//         ],
+//         "professional_experience": [
+//             {
+//                 "role": "Data Scientist",
+//                 "organization": "Swiggy",
+//                 "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
+//                 "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
+//                 "time_duration": {
+//                     "start": "05-2022",
+//                     "end": "07-2022",
+//                     "duration_months": 3
+//                 },
+//                 "relevancy": 4
+//             }
+//         ],
+//         "college": {
+//             "name": "IIT Bombay",
+//             "branch": "Electrical Engineering",
+//             "degree": "Dual Degree",
+//             "cgpa": 8.2,
+//             "start": "07-2018",
+//             "end": "05-2023"
+//         }
+//     },
+//     {
+//         "name": 'Prabhat Singh',
+//         "email": "prabhat@gmail.com",
+//         "relevance_score": 100,
+//         "resume_link": "https://google.com",
+//         "projects": [
+//             {
+//                 "project_title": "Image classification with pytorch",
+//                 "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
+//                 "tech_stack": ["python", "pytorch"],
+//                 "time_duration": {
+//                     "start": "04-2020",
+//                     "end": "05-2020",
+//                     "duration_months": 2,
+//                 },
+//                 "relevancy": 5
+//             },
+//             {
+//                 "project_title": "Stock price prediction with LSTM",
+//                 "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
+//                 "tech_stack": ["python", "pytorch", "SQL"],
+//                 "time_duration": {
+//                     "start": "10-2021",
+//                     "end": "12-2021",
+//                     "duration_months": 3,
+//                 },
+//                 "relevancy": 3
+//             }
+//         ],
+//         "professional_experience": [
+//             {
+//                 "role": "Data Scientist",
+//                 "organization": "Swiggy",
+//                 "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
+//                 "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
+//                 "time_duration": {
+//                     "start": "05-2022",
+//                     "end": "07-2022",
+//                     "duration_months": 3
+//                 },
+//                 "relevancy": 4
+//             }
+//         ],
+//         "college": {
+//             "name": "IIT Bombay",
+//             "branch": "Electrical Engineering",
+//             "degree": "Dual Degree",
+//             "cgpa": 8.2,
+//             "start": "07-2018",
+//             "end": "05-2023"
+//         }
+//     },
+//     {
+//         "name": 'Prabhat Singh',
+//         "email": "prabhat@gmail.com",
+//         "relevance_score": 100,
+//         "resume_link": "https://google.com",
+//         "projects": [
+//             {
+//                 "project_title": "Image classification with pytorch",
+//                 "short_description": "This PyTorch project trains an image classification model on the CIFAR-10 dataset. A CNN architecture with hyperparameters is modeled, trained and tested to categorize images into 10 classes with high accuracy.",
+//                 "tech_stack": ["python", "pytorch"],
+//                 "time_duration": {
+//                     "start": "04-2020",
+//                     "end": "05-2020",
+//                     "duration_months": 2,
+//                 },
+//                 "relevancy": 5
+//             },
+//             {
+//                 "project_title": "Stock price prediction with LSTM",
+//                 "short_description": "The project develops an LSTM model to predict stock prices. Historical closing price data is used to train the recurrent neural network model. By analyzing sequential price patterns, the LSTM model makes multi-day ahead forecasts of a stock's future price.",
+//                 "tech_stack": ["python", "pytorch", "SQL"],
+//                 "time_duration": {
+//                     "start": "10-2021",
+//                     "end": "12-2021",
+//                     "duration_months": 3,
+//                 },
+//                 "relevancy": 3
+//             }
+//         ],
+//         "professional_experience": [
+//             {
+//                 "role": "Data Scientist",
+//                 "organization": "Swiggy",
+//                 "short_description": "Built restaurant recommendation model for Swiggy's landing page to provide personalized suggestions for users based on order data and user attributes using collaborative filtering techniques to increase orders and revenue.",
+//                 "tech_stack": ["python", "Flask", "Hiroku", "MongoDB"],
+//                 "time_duration": {
+//                     "start": "05-2022",
+//                     "end": "07-2022",
+//                     "duration_months": 3
+//                 },
+//                 "relevancy": 4
+//             }
+//         ],
+//         "college": {
+//             "name": "IIT Bombay",
+//             "branch": "Electrical Engineering",
+//             "degree": "Dual Degree",
+//             "cgpa": 8.2,
+//             "start": "07-2018",
+//             "end": "05-2023"
+//         }
+//     }
+// ];
 
 export default function ProfilesTable({ handleOpen, profiles }) {
     const [page, setPage] = React.useState(0);
@@ -363,7 +363,7 @@ export default function ProfilesTable({ handleOpen, profiles }) {
             <TablePagination
                 rowsPerPageOptions={[10, 25, 100]}
                 component="div"
-                count={rows.length}
+                count={profiles.length}
                 rowsPerPage={rowsPerPage}
                 page={page}
                 onPageChange={handleChangePage}
